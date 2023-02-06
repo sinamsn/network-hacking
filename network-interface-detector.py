@@ -12,6 +12,5 @@ print("-------------")
 try:
 	for interface in getnic.interfaces():
 		print("interface "+interface+" ip: "+ni.ifaddresses(interface)[ni.AF_INET][0]['addr'])
-		#print(ni.ifaddresses(interface)[ni.AF_INET][0]['addr'])
 except:
 	print("interface "+ interface+" has no ip !!")
